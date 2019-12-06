@@ -8,10 +8,6 @@ keycloak.json
 # ignore log files
 *.log
 
-# ignore libraries (for now?)
-node_modules
-node
-
 # Don't ignore these
 !keycloak.js
 !systemjs.config.extras.js
