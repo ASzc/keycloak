@@ -19,6 +19,8 @@ Build the Docker image with:
 mvn clean package -Doperator -Dquarkus.container-image.build=true
 ```
 
+This will build a container image using `Dockerfile`, with either of the `docker` or `podman` CLIs. If podman isn't working for you, try removing `docker` completely and following [this guide](https://quarkus.io/guides/podman#setting-docker_host-on-linux) to enable the podman user socket.
+
 ## Configuration
 
 The Keycloak image can be configured, when starting the operator, using the Java property:

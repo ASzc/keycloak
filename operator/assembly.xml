@@ -1,0 +1,27 @@
+<assembly>
+
+    <id>operator</id>
+
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+
+    <includeBaseDirectory>true</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/quarkus-app/</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>**/**</include>
+            </includes>
+            <excludes>
+                <exclude>quarkus-app-dependencies.txt</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+
+    <files>
+    </files>
+
+</assembly>
